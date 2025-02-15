@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- header section  -->
+    <header>
+      <div class="container">
+        <div class="header flex">
+          <div class="Logo-container">
+            <img
+              class="Logo"
+              src="food app icon food explorer - Made with PosterMyWall.jpg"
+              alt=""
+            />
+          </div>
+          <div class="nav-item">
+            <ul class="flex">
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Cart</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- body section  -->
+    <div class="container flex res-cards">
+        <div class="card">
+            <img class="card-img" src="food app icon food explorer - Made with PosterMyWall.jpg" alt="" />
+            <h3>{info.name}</h3>
+            <h4>Cuisines: {info.cuisines?.join(", ")}</h4>
+            <h4>Delivery Time: {info.sla?.deliveryTime} mins</h4>
+            <h4>Rating: {info.avgRating || "N/A"}</h4>
+          </div>
+    </div>
+  </body>
+</html>
